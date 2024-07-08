@@ -26,13 +26,6 @@ module "ec2_sg" {
       protocol    = "tcp"
       description = "TCP30000-32000"
       cidr_blocks = "0.0.0.0/0"
-    },
-    {
-      from_port   = -1
-      to_port     = -1
-      protocol    = "icmp"
-      description = "ICMP"
-      cidr_blocks = "0.0.0.0/0"
     }
   ]
 
